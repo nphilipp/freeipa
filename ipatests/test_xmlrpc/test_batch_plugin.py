@@ -82,6 +82,15 @@ class test_batch(Declarative):
         ),
 
         dict(
+            desc='Empty batch',
+            command=('batch', [], {}),
+            expected=dict(
+                count=0,
+                results=[],
+            ),
+        ),
+
+        dict(
             desc='Create and deleting a group',
             command=('batch', [
                 dict(method=u'group_add',
