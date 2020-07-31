@@ -1,3 +1,5 @@
+trigger: none
+
 variables:
 - template: templates/variables-common.yml
 # platform specific variables, links to
